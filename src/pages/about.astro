@@ -1,0 +1,27 @@
+---
+import "../styles/global.css";
+import Heading from "../components/Heading.astro";
+import Button from "../components/Button.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <h1>Astro</h1>
+    <Heading as="h2" level="1">Hej</Heading>
+    <Heading as="h2" level="2">Hej</Heading>
+    <Heading as="h2" level="3">Hej</Heading>
+    <Heading as="h2" level="4">Hej</Heading>
+    <Heading as="h2" level="5">Hej</Heading>
+
+    <Button href="/" variant="primary">Hej</Button>
+    <Button variant="secondary">Hej</Button>
+    <Button href="/" variant="tertiary">Hej</Button>
+  </body>
+</html>

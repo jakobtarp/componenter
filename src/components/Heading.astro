@@ -1,0 +1,36 @@
+---
+import "../styles/global.css";
+const { as, level } = Astro.props;
+
+const Tag = as;
+---
+
+<Tag class="heading" data-level={level}>
+  <slot />
+</Tag>
+
+<style>
+  .heading {
+    color: red;
+  }
+
+  [data-level="1"] {
+    font-size: var(--step-6);
+  }
+
+  [data-level="2"] {
+    font-size: var(--step-5);
+  }
+
+  [data-level="3"] {
+    font-size: var(--step-4);
+  }
+
+  [data-level="4"] {
+    font-size: var(--step-3);
+  }
+
+  [data-level="5"] {
+    font-size: var(--step-2);
+  }
+</style>
